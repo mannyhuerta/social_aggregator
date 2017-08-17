@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - npm install
+      - npm run build
+      - mkdir output
+      - mv index.html static/ output
+
+artifacts:
+  files:
+    - '**/*'
+  base-directory: 'output'
+  discard-paths: yes
