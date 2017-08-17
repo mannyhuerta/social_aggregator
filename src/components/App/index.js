@@ -25,7 +25,7 @@ export default class App extends Component {
 
     return (
       <header>
-        <div>This is going to be an information aggregater that will build a profile </div>
+        <div>This is application will be a social information aggregator and consolidator to help display various things about you in a simplistic and thoughtfully designed way.</div>
      
       </header>
     );
