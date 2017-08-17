@@ -3,16 +3,8 @@ version: 0.2
 phases:
   build:
     commands:
-      - npm install
-      - npm run build
-      
+      - yarn install
+      - yarn run build
   post_build:
     commands:
-      - mkdir output
-      - mv index.html static/ output
-      - aws s3 sync output/ s3://socialaggregatorweb/www/
-artifacts:
-  files:
-    - '**/*'
-  base-directory: 'output'
-  discard-paths: no
+      - aws s3 sync build/ s3://socialaggregatorweb/www/

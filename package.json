@@ -1,29 +1,16 @@
 {
-  "name": "prophyle",
-  "version": "1.0.0",
-  "description": "A simple page to share information about you from multiple social sites",
-  "main": "index.js",
-  "scripts": {
-    "start": "webpack-dev-server --progress --inline",
-    "compile": "webpack",
-    "build": "webpack -p",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "name": "profiler",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.1",
-    "babel-preset-latest": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "express": "^4.15.4",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "webpack": "^3.5.5",
-    "webpack-dev-middleware": "^1.12.0"
+    "react-scripts": "1.0.11"
   },
-  "devDependencies": {
-    "webpack-dev-server": "^2.7.1"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }
