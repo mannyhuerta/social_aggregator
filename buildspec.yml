@@ -5,9 +5,12 @@ phases:
     commands:
       - npm install
       - npm run build
+      
+  post_build:
+    commands:
       - mkdir output
       - mv index.html static/ output
-
+      - aws s3 sync output/ s3://socialaggregatorweb/www/
 artifacts:
   files:
     - '**/*'
